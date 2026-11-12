@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-edge-layer"
+version = "0.1.0"
+description = "Deterministic typed-decision layer for agent-graph edges: Jev first, calibrated escalation, safety gates."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+claude = ["anthropic>=2.8"]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["jev_edges"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

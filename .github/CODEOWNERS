@@ -1,0 +1,5 @@
+# Safety policy and its guard tests need owner review.
+# Takes effect once "Require review from Code Owners" is enabled in branch protection for main.
+/jev_edges/safety.py   @S13321
+/tests/test_safety.py  @S13321
+/.github/              @S13321
